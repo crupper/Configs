@@ -1,0 +1,133 @@
+
+{
+    "workbench.colorTheme": "Default Light+",
+
+    "editor.rulers": [99],
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
+
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "on", // can change to relative
+    "breadcrumbs.enabled": true,
+
+    // Vim configs
+    "vim.leader": "<space>",
+    "vim.surround": true,
+
+    "vim.easymotion": true,
+    "vim.easymotionMarkerBackgroundColor": "#0000",
+    "vim.easymotionMarkerFontWeight": "bold",
+    "vim.easymotionMarkerForegroundColorOneChar": "#ff0000",
+    "vim.easymotionMarkerForegroundColorTwoCharFirst": "#ffb400",
+    "vim.easymotionMarkerForegroundColorTwoCharSecond": "#b98300",
+    "vim.easymotionDimBackground": true,
+    "vim.easymotionIncSearchForegroundColor": "#7fbf00",
+    "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjf;",
+    "vim.easymotionDimColor": "#777777",
+    "vim.easymotionJumpToAnywhereRegex": "\\b[A-Za-z0-9]|[A-Za-z0-9]\\b|_.|#.|[a-z][A-Z]",
+
+    "vim.useSystemClipboard": true,
+    "vim.overrideCopy": true,
+    "vim.useCtrlKeys": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.autoindent": true,
+    "vim.camelCaseMotion.enable": false,
+    "vim.searchHighlightColor": "yellow",
+    "vim.searchHighlightTextColor": "black",
+    "vim.insertModeKeyBindings": [
+        {
+          "before": ["j", "k"],
+          "after": ["<Esc>"]
+        }
+      ],
+
+    "vim.statusBarColorControl": false,
+    // below controls are likely to impact performance. To enable set above setting to true
+    "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+    "vim.statusBarColors.insert": "#BF616A",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    // end statusbar configs
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#007ACC",
+        "statusBar.noFolderBackground": "#8FBCBB",
+        "statusBar.debuggingBackground": "#8FBCBB",
+        "editor.lineHighlightBackground": "#8f888067",
+        "statusBar.foreground": "#FFFFFF",
+        "statusBar.debuggingForeground": "#434C5E"
+    },
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "n"],
+            "commands": [ ":nohl" ]
+        },
+        {
+            "before": ["<leader>", "<leader>", "w"],
+            "commands": [ "workbench.action.files.save" ]
+        },
+        {
+            "before": ["<leader>", "h"],
+            "commands": [ "workbench.action.navigateRight" ]
+        },
+        {
+            "before": ["<leader>", "l"],
+            "commands": [ "workbench.action.navigateLeft" ]
+        },
+        {
+            "before": ["g", "p"],
+            "commands": [ "editor.action.peekDefinition" ]
+        },
+        {
+            "before": ["g", "r"],
+            "commands": [ "editor.action.referenceSearch.trigger" ]
+        },
+        {
+            "before": ["<leader>", "s"],
+            "after": [ "<leader>", "<leader>", "s" ]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "after": [ "<leader>", "<leader>", "j" ]
+        },
+        {
+            "before": ["<leader>", "k"],
+            "after": [ "<leader>", "<leader>", "k" ]
+        },
+        {
+            "before": ["<leader>", "b"],
+            "after": [ "<leader>", "<leader>", "b" ]
+        },
+        {
+            "before": ["<leader>", "w"],
+            "after": [ "<leader>", "<leader>", "w" ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ]
+}
